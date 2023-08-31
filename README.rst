@@ -3,12 +3,25 @@
 QSIprep: Preprocessing and analysis of q-space images
 =======================================================
 
+.. image:: https://img.shields.io/badge/Source%20Code-pennlinc%2Fqsiprep-purple
+  :target: https://github.com/PennLINC/qsiprep
+  :alt: GitHub Repository
+
 .. image:: https://readthedocs.org/projects/qsiprep/badge/?version=latest
   :target: http://qsiprep.readthedocs.io/en/latest/?badge=latest
   :alt: Documentation Status
 
+.. image:: https://img.shields.io/badge/docker-pennlinc/qsiprep-brightgreen.svg?logo=docker&style=flat
+  :target: https://hub.docker.com/r/pennlinc/qsiprep/tags/
+  :alt: Docker
+
 .. image:: https://circleci.com/gh/PennLINC/qsiprep/tree/master.svg?style=svg
   :target: https://circleci.com/gh/PennLINC/qsiprep/tree/master
+  :alt: Test Status
+
+.. image:: https://img.shields.io/github/license/pennlinc/qsiprep
+  :target: https://opensource.org/licenses/BSD-3-Clause
+  :alt: License
 
 
 Full documentation at https://qsiprep.readthedocs.io
