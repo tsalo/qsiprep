@@ -121,7 +121,7 @@ version-file = "qsiprep/_version.py"
 
 [tool.black]
 line-length = 99
-target-version = ['py38']
+target-version = ['py310']
 include = '\.pyi?$'
 exclude = '''
 (
@@ -134,7 +134,6 @@ exclude = '''
     | _build
     | build
     | dist
-    | qsiprep/niworkflows
   )/
   | qsiprep/_version.py
 )
