@@ -72,7 +72,7 @@ def main():
     config_file.parent.mkdir(exist_ok=True, parents=True)
     config.to_filename(config_file)
 
-    mode = "qsirecon" if opts.recon_only else "qsiprep"
+    mode = "qsirecon" if config.workflow.recon_only else "qsiprep"
     if mode == "qsirecon":
         config.loggers.cli.info("running qsirecon")
         building_func = build_recon_workflow
@@ -194,8 +194,6 @@ def main():
             _copy_any(dseg_tsv, str(config.execution.qsiprep_dir / "desc-aparcaseg_dseg.tsv"))
         errno = 0
     finally:
-        from fmriprep.reports.core import generate_reports
-
         from qsiprep import data
 
         # Generate reports phase
